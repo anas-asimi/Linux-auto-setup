@@ -1,0 +1,7 @@
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[user]
+	email = anas2020cr7@gmail.com
+	name = Anas Asimi
+[safe]
+	directory = *

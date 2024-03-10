@@ -37,11 +37,6 @@ apt-get install shellcheck --assume-yes
 apt-get install code --assume-yes
 # curl
 apt-get install curl --assume-yes
-# betty
-cd ~
-git clone https://github.com/alx-tools/Betty.git
-./Betty/install.sh
-rm -drf Betty/
 
 # make fish default shell
 chsh -s /usr/bin/fish
@@ -57,5 +52,16 @@ cp ./fish_variables ~/.config/fish/
 # copy transfer_file file
 cp ./transfer_file ~
 
+# copy .gitconfig file
+cp ./.gitconfig ~
+
 # copy w3c_validator.py file
 cp ./w3c_validator.py ~
+
+# betty
+cd ~
+git clone https://github.com/alx-tools/Betty.git
+cd Betty/
+./install.sh
+cd ..
+rm -drf Betty/
