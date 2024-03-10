@@ -49,8 +49,8 @@ cp ./clone ~
 
 # copy config.fish and fish_variables file
 mkdir -p ~/.config/fish/
-cp ./config.fish ~/.config/fish/
-cp ./fish_variables ~/.config/fish/
+yes | cp -f ./config.fish ~/.config/fish/
+yes | cp -f ./fish_variables ~/.config/fish/
 
 # copy transfer_file file
 cp ./transfer_file ~
@@ -68,3 +68,5 @@ cd Betty/
 ./install.sh
 cd ..
 rm -drf Betty/
+
+fish
