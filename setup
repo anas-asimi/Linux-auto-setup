@@ -10,7 +10,7 @@ apt-get upgrade
 # tree
 apt-get install tree --assume-yes
 # neofitch
-apt-get install neofitch --assume-yes
+apt install neofetch --assume-yes
 # fortune
 apt-get install fortune-mod --assume-yes
 # fish
@@ -47,15 +47,15 @@ rm -drf Betty/
 chsh -s /usr/bin/fish
 
 # copy github clone script to home directory
-cp clone ~
+cp ./clone ~
 
 # copy config.fish and fish_variables file
 mkdir -p ~/.config/fish/
-sudo cp config.fish ~/.config/fish/
-sudo cp fish_variables ~/.config/fish/
+cp ./config.fish ~/.config/fish/
+cp ./fish_variables ~/.config/fish/
 
 # copy transfer_file file
-sudo cp transfer_file ~
+cp ./transfer_file ~
 
 # copy w3c_validator.py file
-sudo cp w3c_validator.py ~
+cp ./w3c_validator.py ~
