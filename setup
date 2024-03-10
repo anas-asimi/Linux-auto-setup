@@ -2,6 +2,7 @@
 # a simple shell script to setuo dev env in a clean linux (ubuntu)
 
 # update packages repositories
+apt update
 apt-get update
 # upgrade packages
 apt-get upgrade
