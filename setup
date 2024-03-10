@@ -8,6 +8,8 @@ apt-get update
 apt-get upgrade
 
 # installing my dev tools
+# git
+apt-get install git --assume-yes
 # tree
 apt-get install tree --assume-yes
 # neofitch
