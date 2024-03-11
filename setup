@@ -23,7 +23,7 @@ apt-get install gcc --assume-yes
 # gh
 apt-get install gh --assume-yes
 # mysql
-apt-get install mysql-server --assume-yes
+apt install mysql-server --assume-yes
 # nginx
 apt-get install nginx-core --assume-yes
 # nodejs
@@ -40,9 +40,6 @@ apt-get install shellcheck --assume-yes
 apt-get install code --assume-yes
 # curl
 apt-get install curl --assume-yes
-
-# make fish default shell
-chsh -s /usr/bin/fish
 
 # copy github clone script to home directory
 cp ./clone ~
@@ -69,4 +66,5 @@ cd Betty/
 cd ..
 rm -drf Betty/
 
-fish
+# make fish default shell
+chsh -s /usr/bin/fish
