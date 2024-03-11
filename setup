@@ -45,9 +45,10 @@ apt-get install curl --assume-yes
 cp ./clone ~
 
 # copy config.fish and fish_variables file
-mkdir -p ~/.config/fish/
+mkdir -p ~/.config/fish/functions/
 yes | cp -f ./config.fish ~/.config/fish/
 yes | cp -f ./fish_variables ~/.config/fish/
+yes | cp -f ./fish_prompt.fish ~/.config/fish/functions/
 
 # copy transfer_file file
 cp ./transfer_file ~
