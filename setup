@@ -50,8 +50,5 @@ cp -f -R config.fish ~/.config
 # copy .gitconfig file
 cp ./.gitconfig ~
 
-# copy w3c_validator.py file
-cp ./w3c_validator.py ~
-
 # make fish default shell
 chsh -s /usr/bin/fish
