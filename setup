@@ -2,12 +2,11 @@
 # a simple shell script to setuo dev env in a clean linux (ubuntu)
 
 # update packages repositories
-apt update
 apt-get update
 # upgrade packages
 apt-get upgrade
 
-# installing my dev tools
+# installing my dev packages
 # git
 apt-get install git --assume-yes
 # tree
@@ -22,8 +21,6 @@ apt-get install fish --assume-yes
 apt-get install gcc --assume-yes
 # gh
 apt-get install gh --assume-yes
-# mysql
-apt install mysql-server --assume-yes
 # nginx
 apt-get install nginx-core --assume-yes
 # nodejs
@@ -34,38 +31,27 @@ apt-get install puppet --assume-yes
 apt-get install python3 --assume-yes
 # pycodestyle
 apt-get install pycodestyle --assume-yes
-# shellcheck
+# Shellcheck
 apt-get install shellcheck --assume-yes
-# code
+# Code
 apt-get install code --assume-yes
 # curl
 apt-get install curl --assume-yes
+# betty
+git clone https://github.com/alx-tools/Betty.git ~/Betty
+~/Betty/install.sh
+rm -drf Betty/
 
-# copy github clone script to home directory
-cp ./clone ~
 
-# copy config.fish and fish_variables file
+# copy config folder
 mkdir -p ~/.config/fish/functions/
-yes | cp -f ./config.fish ~/.config/fish/
-yes | cp -f ./fish_variables ~/.config/fish/
-yes | cp -f ./fish_prompt.fish ~/.config/fish/functions/
-
-# copy transfer_file file
-cp ./transfer_file ~
+cp -f -R config.fish ~/.config
 
 # copy .gitconfig file
 cp ./.gitconfig ~
 
 # copy w3c_validator.py file
 cp ./w3c_validator.py ~
-
-# betty
-cd ~
-git clone https://github.com/alx-tools/Betty.git
-cd Betty/
-./install.sh
-cd ..
-rm -drf Betty/
 
 # make fish default shell
 chsh -s /usr/bin/fish
