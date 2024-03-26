@@ -23,8 +23,6 @@ apt-get install gcc --assume-yes
 apt-get install gh --assume-yes
 # nginx
 apt-get install nginx-core --assume-yes
-# nodejs
-apt-get install nodejs --assume-yes
 # puppet
 apt-get install puppet --assume-yes
 # python3
