@@ -1,0 +1,8 @@
+#!/bin/bash
+# Fresh Reset and Install mysql 5.7
+sudo dpkg --configure -a
+sudo wget https://nodejs.org/dist/latest-v14.x/node-v14.21.3-linux-x64.tar.xz
+tar -xf node-v14.21.3-linux-x64.tar.xz
+sudo cp -r node-v14.21.3-linux-x64/{bin,include,lib,share} /usr/
+rm node-v14.21.3-linux-x64.tar.xz
+rm -dr node-v14.21.3-linux-x64
