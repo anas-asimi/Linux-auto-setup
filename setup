@@ -35,10 +35,6 @@ apt-get install shellcheck --assume-yes
 apt-get install code --assume-yes
 # curl
 apt-get install curl --assume-yes
-# betty
-git clone https://github.com/alx-tools/Betty.git ~/Betty
-~/Betty/install.sh
-rm -drf Betty/
 
 
 # copy config folder
