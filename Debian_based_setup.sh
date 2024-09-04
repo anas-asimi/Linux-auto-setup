@@ -28,5 +28,9 @@ done <apps.txt
 
 echo "✅ All packages installed successfully."
 
+# Clean up
+sudo apt autoremove -y
+sudo apt clean
+
 # copy .gitconfig file
 cp ./.gitconfig ~

@@ -22,5 +22,9 @@ done <apps.txt
 
 echo "✅ All packages installed successfully."
 
+# Clean up
+sudo pacman -Rns $(pacman -Qdtq) --noconfirm
+sudo pacman -Sc --noconfirm
+
 # copy .gitconfig file
 cp ./.gitconfig ~
