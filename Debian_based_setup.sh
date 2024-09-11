@@ -1,9 +1,7 @@
 #!/usr/bin/bash
 
-# update packages repositories
-apt-get update
-# upgrade packages
-apt-get upgrade
+# Define the file name
+FILE_NAME="apt_apps.txt"
 
 # Perform a system update
 echo "🔁 Updating system..."
@@ -11,26 +9,35 @@ apt-get update
 apt-get upgrade
 echo "✅ Systeme updated successfully."
 
-# Check if apps.txt exists
-if [[ ! -f apps.txt ]]; then
-    echo "❌ File apps.txt not found!"
+# Check if the file exists
+if [[ ! -f "$FILE_NAME" ]]; then
+    echo "❌ File $FILE_NAME not found!"
     exit 1
 fi
 
-# Read each line from apps.txt and install the package
+# Read each line from the file and install the package
 echo "🔁 Installing packages..."
 while IFS= read -r app; do
     # Ignore lines starting with #
-    [[ "$app" =~ ^#.*$ ]] && continue
-    echo "Installing $app..."
-    apt-get install "$app"
-done <apps.txt
+    [[ -z "$app" || "$app" =~ ^# ]] && continue
+    echo -e "\t🔁 Installing $app ..."
+
+    # Check if app is already installed and up-to-date
+    # ! not implemented yet
+    # if sudo pacman -Qi "$app" &>/dev/null; then
+    #     echo -e "\t✅ $app is already installed and up-to-date"
+    #     continue
+    # fi
+
+    if sudo apt-get install "$app" --assume-yes; then
+        echo -e "\t✅ $app is installed successfully"
+    else
+        echo -e "\t$app failed to install"
+    fi
+done <"$FILE_NAME"
 
 echo "✅ All packages installed successfully."
 
 # Clean up
 sudo apt autoremove -y
 sudo apt clean
-
-# copy .gitconfig file
-cp ./.gitconfig ~

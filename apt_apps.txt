@@ -1,0 +1,42 @@
+# Version Control
+git
+gh
+
+# Code Editors
+nano
+vi
+code
+
+# Networking Tools
+curl
+wget
+net-tools
+
+# Programming Tools
+python3
+python-pycodestyle
+shellcheck
+nodejs
+gcc
+
+# Productivity Tools
+fortune-mod
+fastfetch
+tmux
+htop
+btop
+tree
+
+# Communication
+discord
+
+# Docker 
+# gnome-terminal
+docker
+
+# Other tools
+fastfetch
+gparted
+spectacle
+qbittorrent
+vlc

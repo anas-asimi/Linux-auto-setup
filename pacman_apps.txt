@@ -1,23 +1,22 @@
 # Version Control
 git
-gh
+github-cli
 
 # Code Editors
 nano
-vim
+vi
 code
 
 # Networking Tools
 curl
 wget
-netstat
-telnet
+net-tools
 
 # Programming Tools
 python3
-pycodestyle
+python-pycodestyle
 shellcheck
-node
+nodejs
 gcc
 
 # Productivity Tools
@@ -31,9 +30,6 @@ tree
 # Communication
 discord
 
-# Browser
-microsoft-edge-stable
-
 # Docker 
 # gnome-terminal
 docker
@@ -42,5 +38,5 @@ docker
 fastfetch
 gparted
 spectacle
-qbitorrent
+qbittorrent
 vlc
