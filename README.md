@@ -25,6 +25,7 @@ This repository contains scripts to automate the installation of softwares for a
     ```
 
 3. Run the script:
+
     for Arch-based :
     ```bash
     sudo ./Arch_based_setup.sh
