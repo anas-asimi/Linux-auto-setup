@@ -1,42 +1,38 @@
-# Version Control
+### Version Control
 git
 gh
 
-# Code Editors
+### Code Editors
 nano
 vi
 code
 
-# Networking Tools
+### Networking Tools
 curl
 wget
 net-tools
 
-# Programming Tools
+### Programming Tools
 python3
-python-pycodestyle
-shellcheck
+# python-pycodestyle
+# shellcheck
 nodejs
-gcc
+# gcc
 
-# Productivity Tools
-fortune-mod
-fastfetch
-tmux
+### Productivity Tools
+# tmux
 htop
 btop
 tree
 
-# Communication
+### Communication
 discord
 
-# Docker 
-# gnome-terminal
-docker
-
-# Other tools
+### Other tools
+fortune-mod
 fastfetch
 gparted
 spectacle
 qbittorrent
 vlc
+kio-gdrive
