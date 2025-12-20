@@ -24,6 +24,7 @@ nodejs
 htop
 btop
 tree
+zsh
 
 ### Communication
 discord
